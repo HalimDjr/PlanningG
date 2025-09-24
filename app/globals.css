@@ -1,0 +1,288 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+}
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+/* @layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
+} */
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+.h {
+  height: calc(100vh - 80px);
+}
+.bg {
+  background-color: hsl(250, 50%, 98%);
+}
+.scale-103:hover {
+  transform: scale(1.03);
+  transition: transform 0.2s ease-in-out;
+}
+
+.header {
+  background-color: #17203f;
+  color: #fff;
+  padding: 16px;
+
+  text-align: center;
+}
+
+.log {
+  width: 90px;
+  height: 25px;
+  background: url("/logo.png");
+  background-size: cover;
+}
+
+.back {
+  background-image: url("/back1.png");
+  background-size: 1513px 860px;
+  background-position-x: -10;
+}
+
+.container {
+  height: 860px;
+}
+.card {
+  border-radius: 50px;
+}
+
+.features {
+  background-color: #18203f;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.feature {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.feature-card {
+  margin-left: 1px;
+}
+.feature i {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #333;
+}
+.gri {
+  background-image: url("/capture1.png");
+  background-size: cover;
+  width: 600px;
+  height: 300px;
+  margin: 0;
+  background-position-x: -10;
+}
+.gri1 {
+  background-image: url("/capture2.png");
+  background-size: contain;
+  width: 500px;
+  height: 300px;
+  margin: 0;
+  background-position-x: -10;
+}
+.gri2 {
+  background-image: url("/capture3.png");
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+  margin: 0;
+  background-position-x: -10;
+  margin-left: 50px;
+  background-color: transparent;
+}
+.gri3 {
+  background-image: url("/capture5.png");
+  background-size: cover;
+  width: 650px;
+  height: 550px;
+  margin: 0;
+  background-position-x: -10;
+}
+.gri4 {
+  background-image: url("/capture4.png");
+  background-size: cover;
+  width: 600px;
+  height: 300px;
+  margin: 0;
+  margin-top: 77px;
+  background-position-x: -10;
+}
+.gri5 {
+  background-image: url("/HHH.JPG");
+  background-size: cover;
+  width: 600px;
+  height: 300px;
+
+  margin-top: 5;
+  background-position-x: -10;
+}
+/* .gri6 {
+  background-image: url("/choix.png");
+  background-size: cover;
+  width: 600px;
+  height: 300px;
+
+  margin-top: 5;
+  background-position-x: -10;
+} */
+.log2 {
+  border-radius: 11px;
+  width: 210px;
+  height: 90px;
+  background: url("/1000139819.png");
+  background-size: cover;
+  padding: 0px;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.parallax {
+  position: relative;
+
+  margin-top: 70px;
+
+  width: 100%;
+  height: 300px;
+  background: url("/pic.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.parallax p {
+  margin-top: -100px;
+  font-size: 65px;
+  color: #f1f1f1f1;
+}
+
+.parallax span {
+  display: block;
+  font-size: 25px;
+  color: #f1f1f1;
+}
+
+.pGrad {
+  margin-top: 800px;
+}
