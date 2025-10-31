@@ -14,7 +14,7 @@ Ce module représente **l’espace Administrateur** et permet la configuration, 
 | **Next.js** | Framework React utilisé pour le frontend |
 | **Tailwind CSS** | Mise en forme et interface utilisateur moderne |
 | **Node.js** | Environnement d’exécution JavaScript |
-| **MongoDB / MySQL** (selon ton projet) | Gestion de la base de données |
+| **MySQL** | Gestion de la base de données |
 | **Axios / Fetch** | Communication Client ↔️ Serveur |
 
 ---
